@@ -8,6 +8,10 @@
 
 #import "ViewController.h"
 #import "MyScene.h"
+#import "IntroScene.h"
+#import "GasStationOne.h"
+#import "LevelThree.h"
+#import "LevelTwo.h"
 
 @implementation ViewController
 
@@ -17,15 +21,17 @@
 
     // Configure the view.
     SKView * skView = (SKView *)self.view;
-    skView.showsFPS = YES;
-    skView.showsNodeCount = YES;
+    skView.showsFPS = NO;
+    skView.showsNodeCount = NO;
     
-    // Create and configure the scene.
-    SKScene * scene = [MyScene sceneWithSize:skView.bounds.size];
+    // Create and configure the scene
+    
+    SKScene * scene = [IntroScene sceneWithSize:skView.bounds.size];
     scene.scaleMode = SKSceneScaleModeAspectFill;
     
     // Present the scene.
     [skView presentScene:scene];
+    
 }
 
 - (BOOL)shouldAutorotate
@@ -33,10 +39,13 @@
     return YES;
 }
 
-- (NSUInteger)supportedInterfaceOrientations
+
+// changes from NSUInteger
+- (UIInterfaceOrientationMask)supportedInterfaceOrientations
 {
     if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPhone) {
         return UIInterfaceOrientationMaskAllButUpsideDown;
+
     } else {
         return UIInterfaceOrientationMaskAll;
     }
