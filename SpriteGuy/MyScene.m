@@ -205,8 +205,8 @@ static const uint32_t enemyCategory  =  0x1 << 1;
             self.player.physicsBody.velocity = CGVectorMake(0, 0);
             [self.player.physicsBody applyImpulse:CGVectorMake(0, 135)];
             
-        } else if ([UIScreen mainScreen].bounds.size.height == 736){
-            //iphone 6plus
+        } else if ([UIScreen mainScreen].bounds.size.height >= 736){
+            //iphone 6plus or greater
             self.player.physicsBody.velocity = CGVectorMake(0, 0);
             [self.player.physicsBody applyImpulse:CGVectorMake(0, 170)];
             
@@ -544,8 +544,8 @@ static const uint32_t enemyCategory  =  0x1 << 1;
                 [sprite setScale:2.3486];
             }
         
-    } else if ([UIScreen mainScreen].bounds.size.height == 736){
-        //iphone 6plus
+    } else if ([UIScreen mainScreen].bounds.size.height >= 736){
+        //iphone 6plus or greater
             if ([sprite isEqual:self.player]) {
                 [sprite setScale:1.2958];
             }
