@@ -4,4 +4,4 @@
 
 "A man without a master must journey in search of his golden trophy"
 
-![Screenshot](https://github.com/longhorn499/Waveman/raw/master/Screenshot.jpeg) 
+![Screenshot 2024-02-05 at 6 06 04 PM](https://github.com/kevin49999/Waveman/assets/17791511/6f158b16-374c-4439-8a81-862cba4b5212)
